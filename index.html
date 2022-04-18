@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <script src="img_gallery.js" defer></script>
+    <title>Top Restaurant</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Top Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+     <!--Showcase-->
+     <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Hello, Welcome to Top Restaurant</h1>
+                <p>I am a Computer Science Student at PCC. I enjoy learning new things, and I am quite into things with numbers. 
+                    Computers Science and the world of computers kindled an interest within me that never wants to stop growing
+                 
+                </p>
+                    <a href="about.html" class="btn btn-outline">Read More about us</a>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Contact Us via Email</h2>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-control">
+                        
+                        <input type="text" name="message" placeholder="Message" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="imgGallery">
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="Image/i_fried_rice_ccexpress.jpeg" style="max-width: 100%; max-height: 100%;">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="Image/chicken_katsu_ccexpress.jpeg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="Image/img_mountains_wide.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="Image/img_lights_wide.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="Image/img_nature_wide.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="Image/img_snow_wide.jpg" style="width:100%">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="Image/i_fried_rice_ccexpress.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Indonesion Fried Rice">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Image/chicken_katsu_ccexpress.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Chicken Katsu Plate">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Image/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Image/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Image/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Image/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+        
+    </section>
+
+    <!--Stats-->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Welcome to the best platform for building applications of all 
+                types with modern architecture and scaling
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,349,405</h3>
+                    <p class="text-secondary">Deployments</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">Published</p>
+                </div>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2,343,265</h3>
+                    <p class="text-secondary">Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-4">
+            <div>
+                <h1>Address</h1>
+                <address>
+                    Top Restaurant <br />
+                    1842 E Colorodo Blvd <br />
+                    Pasasdena, CA  91107 <br />
+                    (386) 555 - 7499
+                </address>
+            </div>
+            <div>
+                <h1>Business Hours</h1>
+                <table>
+                    <tr><th>Monday</th><td style="color: rgb(255, 0 , 25);">Closed</td></tr>
+                    <tr><th>Tuesday - Sunday</th><td>11am - 8pm</td></tr>
+                </table>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.yelp.com/biz/top-restaurant-pasadena"><i class="fab fa-yelp fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/tyler-truong-421713221/"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
